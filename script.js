@@ -21,9 +21,11 @@ try {
     let ball1, ball2;
 
     const planets = {
+        sun: 274,
         mercury: 3.7,
         venus: 8.87,
         earth: 9.81,
+        moon: 1.625,
         mars: 3.71,
         jupiter: 24.79,
         saturn: 10.44,
