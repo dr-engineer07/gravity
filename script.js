@@ -39,7 +39,7 @@ try {
             this.dy = dy;
             this.g = g;
             this.canvas = canvas;
-            this.color = 'blue';
+            this.color = '#fff'; // White ball
         }
 
         draw(ctx) {
@@ -106,7 +106,7 @@ try {
                 ctx.beginPath();
                 ctx.moveTo(0, ctx.canvas.height);
                 ctx.lineTo(ctx.canvas.width, ctx.canvas.height);
-                ctx.strokeStyle = '#000';
+                ctx.strokeStyle = '#fff'; // White ground line for space theme
                 ctx.lineWidth = 2;
                 ctx.stroke();
             });
