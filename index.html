@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Drop Simulation on Two Planets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="height">Drop Height (meters):</label>
+        <input type="number" id="height" min="1" placeholder="Enter height (≥1)">
+
+        <label for="planet1">Planet 1:</label>
+        <select id="planet1">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth" selected>Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+        </select>
+
+        <label for="planet2">Planet 2:</label>
+        <select id="planet2">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars" selected>Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+        </select>
+
+        <button onclick="startSimulation()">Start Simulation</button>
+        <div id="error">Please enter a valid height (≥1m)</div>
+    </div>
+    <div id="simulation">
+        <div class="planet-sim">
+            <div id="label1" class="planet-label"></div>
+            <canvas id="canvas1" width="400" height="600"></canvas>
+        </div>
+        <div class="planet-sim">
+            <div id="label2" class="planet-label"></div>
+            <canvas id="canvas2" width="400" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
