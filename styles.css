@@ -118,3 +118,9 @@ button:hover {
     margin-top: 15px;
     text-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
 }
+
+.info {
+    font-size: 1em;
+    margin-top: 10px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
